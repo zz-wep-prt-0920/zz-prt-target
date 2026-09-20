@@ -1,0 +1,9 @@
+name: prt-probe
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ZZQ-PRT-PROBE ran on pull_request_target"
